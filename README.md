@@ -16,7 +16,7 @@
 
 ## Usage
 
-> Using this booking module you can go do multiple id endpoints explained down below and see conditional rendered components as well as some react bootstrap modal user interaction.
+> Using this booking module you can use multiple id endpoints explained down below and see conditional rendered components as well as some react bootstrap dropdown user interaction.
 
 ## Requirements
 
@@ -75,18 +75,16 @@ This will install all necessary dependencies.
 
 The first and foremost task is to get mariadb downloaded, up and running.  After that, you should create a file named ```login.js``` and place within the database folder with the necessary mariadb login information (e.g. user, password, host, and default database) in an object format.
 
-Next step is to run the seeding script ```npm run seed```. This will seed the database with mock data that can be viewed by going to endpoints of id 1-100 (explained later.)
+Next step is to run the seeding script ```npm run seed```. This will seed the database with mock data that can be viewed by going specific endpoints (explained later.)
 
 The next step is to use two terminals to start the webpack build watching and the server
 ```
 npm run build:dev
 npm run start:dev
 ```
-Following that, you can open up a browser and go to http://localhost:3002/(:id) where (:id) represents an id referencing a mock listing from our database.  You may use the numbers 1-100 for the id value.
+Following that, you can open up a browser and go to http://localhost:3002/:id where :id represents an id referencing a mock listing from our database.  You may use the numbers 1-100 for the id value.
 
 ### Testing
 
 Finally, to test our program we can run the following tests after code changes.  
 ```npm run test```  
-
-Note that the testing is very minimal at this point and is not extensive by any means.
